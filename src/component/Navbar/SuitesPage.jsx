@@ -6,16 +6,16 @@ const SuitesPage = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  const suites = [
-    { name: 'Presidential Suite', icon: '👑', price: '$1,500/night', size: '2500 sq ft', beds: 'King + 2 Queen', guests: '6 Guests' },
-    { name: 'Royal Suite', icon: '🏰', price: '$1,200/night', size: '2000 sq ft', beds: 'King Bed', guests: '4 Guests' },
-    { name: 'Honeymoon Suite', icon: '💖', price: '$900/night', size: '1500 sq ft', beds: 'King Bed', guests: '2 Guests' },
-    { name: 'Executive Suite', icon: '💼', price: '$750/night', size: '1200 sq ft', beds: 'Queen Bed', guests: '2 Guests' },
-    { name: 'Family Suite', icon: '👨‍👩‍👧‍👦', price: '$650/night', size: '1100 sq ft', beds: '2 Queen Beds', guests: '4 Guests' },
-    { name: 'Deluxe Suite', icon: '✨', price: '$550/night', size: '900 sq ft', beds: 'Queen Bed', guests: '2 Guests' },
-    { name: 'Garden Suite', icon: '🌿', price: '$500/night', size: '850 sq ft', beds: 'Queen Bed', guests: '2 Guests' },
-    { name: 'Junior Suite', icon: '🌟', price: '$400/night', size: '700 sq ft', beds: 'Queen Bed', guests: '2 Guests' },
-  ];
+ const suites = [
+  { name: 'Presidential Suite', icon: '👑', price: '£1,500/night', size: '2500 sq ft', beds: 'King + 2 Queen', guests: '6 Guests' },
+  { name: 'Royal Suite', icon: '🏰', price: '£1,200/night', size: '2000 sq ft', beds: 'King Bed', guests: '4 Guests' },
+  { name: 'Honeymoon Suite', icon: '💖', price: '£900/night', size: '1500 sq ft', beds: 'King Bed', guests: '2 Guests' },
+  { name: 'Executive Suite', icon: '💼', price: '£750/night', size: '1200 sq ft', beds: 'Queen Bed', guests: '2 Guests' },
+  { name: 'Family Suite', icon: '👨‍👩‍👧‍👦', price: '£650/night', size: '1100 sq ft', beds: '2 Queen Beds', guests: '4 Guests' },
+  { name: 'Deluxe Suite', icon: '✨', price: '£550/night', size: '900 sq ft', beds: 'Queen Bed', guests: '2 Guests' },
+  { name: 'Garden Suite', icon: '🌿', price: '£500/night', size: '850 sq ft', beds: 'Queen Bed', guests: '2 Guests' },
+  { name: 'Junior Suite', icon: '🌟', price: '£400/night', size: '700 sq ft', beds: 'Queen Bed', guests: '2 Guests' },
+];
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
